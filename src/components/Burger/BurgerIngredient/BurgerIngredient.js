@@ -32,11 +32,7 @@ const BurgerIngredient = (props) => {
         default:
             ingredient = null;
     }
-    return (
-        <div>
-
-        </div>
-    );
+    return ingredient;
 };
 
 BurgerIngredient.propTypes = {
