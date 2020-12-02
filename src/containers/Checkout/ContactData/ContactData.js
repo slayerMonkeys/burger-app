@@ -5,6 +5,7 @@ import Button from "../../../components/UI/Button/Button";
 import styles from './ContactData.module.css'
 import Spinner from "../../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../../HOC/withErrorHandler/withErrorHandler";
+import Input from "../../../components/UI/Input/Input";
 
 class ContactData extends Component {
     state = {
@@ -49,17 +50,15 @@ class ContactData extends Component {
     render() {
         let form = (
             <form>
-                <ul>
-                    <li><input type='text' name='name' placeholder="Your Name" /></li>
-                    <li><input type='email' name='email' placeholder="Your Mail" /></li>
-                    <li><input type='text' name='street' placeholder="Street" /></li>
-                    <li><input type='text' name='postal' placeholder="Postal Code" /></li>
-                    <li><Button btnType="Success" clicked={this.orderHandler}>ORDER</Button></li>
-                </ul>
+                <Input inputtype="input" type='text' name='name' placeholder="Your Name"/>
+                <Input inputtype="input" type='email' name='email' placeholder="Your Mail"/>
+                <Input inputtype="input" type='text' name='street' placeholder="Street"/>
+                <Input inputtype="input" type='text' name='postal' placeholder="Postal Code"/>
+                <Button btnType="Success" clicked={this.orderHandler}>ORDER</Button>
             </form>
         );
         if (this.state.loading) {
-            form = <Spinner />;
+            form = <Spinner/>;
         }
         return (
             <div className={styles.ContactData}>
