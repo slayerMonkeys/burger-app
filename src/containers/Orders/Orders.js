@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Order from "../../components/Order/Order";
 import axios from "../../axios-orders";
 import withErrorHandler from "../../HOC/withErrorHandler/withErrorHandler";
+import Spinner from "../../components/UI/Spinner/Spinner";
 
 class Orders extends Component {
     state = {
@@ -27,12 +28,19 @@ class Orders extends Component {
     }
 
     render() {
-
+        let orders = null
+        if (this.state.loading) {
+            orders = <Spinner />
+        }
+        if (this.state.orders.length > 1) {
+            orders = this.state.orders.map(order => (
+                <Order key={order.id} ingredients={order.ingredients} price={order.price} />
+            ))
+        }
         return (
             <div>
                 <h1 style={{textAlign: "center"}}>Your Orders</h1>
-                <Order />
-                <Order />
+                {orders}
             </div>
         );
     }
