@@ -1,9 +1,16 @@
-const objectToSearch = (object) => {
+const objectToSearch = (object, otherParams = null) => {
     const queryParams = [];
     for (let i in object) {
-        queryParams.push(encodeURIComponent(i)+ '='+ encodeURIComponent(object[i]));
+        queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(object[i]));
     }
-    return '?'+queryParams.join('&');
+
+    if (Array.isArray(otherParams)) {
+        otherParams.forEach(param => queryParams.push(param))
+    } else if (typeof otherParams === "string") {
+        queryParams.push(otherParams)
+    }
+
+    return '?' + queryParams.join('&');
 }
 
 const searchToObject = (search) => {

@@ -11,7 +11,8 @@ class Checkout extends Component {
             meat: 1,
             cheese: 1,
             bacon: 1
-        }
+        },
+        price: null
     }
 
     checkoutCancelledHandler = () => {
@@ -23,8 +24,13 @@ class Checkout extends Component {
     }
 
     componentDidMount() {
-        const ingredients = query.searchToObject(this.props.location.search)
-        this.setState({ingredients: ingredients})
+        const data = query.searchToObject(this.props.location.search)
+        this.setState({ingredients: {
+                salad: data.salad,
+                meat: data.meat,
+                cheese: data.cheese,
+                bacon: data.bacon
+            }, price: data.price})
     }
 
     render() {
@@ -34,8 +40,11 @@ class Checkout extends Component {
                     ingredients={this.state.ingredients}
                     onCheckoutCancelled={this.checkoutCancelledHandler}
                     onCheckoutContinued={this.checkoutContinuedHandler}
-                />
-                <Route path={this.props.match.path + '/contact-data'} strict component={ContactData} />
+                    />
+                <Route
+                    path={this.props.match.path + '/contact-data'}
+                    render={(props) => (<ContactData ingredients={this.state.ingredients} price={this.state.price} {...props} />)}
+                    />
             </div>
         );
     }
