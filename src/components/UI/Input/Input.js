@@ -4,25 +4,24 @@ import styles from './Input.module.css';
 
 const Input = (props) => {
     let inputElement = null;
-
-    switch (props.elementtype) {
+    switch (props.elementType) {
         case ('input'):
             inputElement = <input
                 className={styles.InputElement}
-                {...props.elementconfig}
-                value={props.value} />
+                {...props.elementConfig}
+                value={props.changed} />
             break
         case ('textarea'):
             inputElement = <textarea
                 className={styles.InputElement}
-                {...props.elementconfig}
-                value={props.value} />
+                {...props.elementConfig}
+                value={props.changed} />
             break
         default:
             inputElement = <input
                 className={styles.InputElement}
-                {...props.elementconfig}
-                value={props.value} />
+                {...props.elementConfig}
+                value={props.changed} />
     }
     return (
         <div className={styles.Input}>
