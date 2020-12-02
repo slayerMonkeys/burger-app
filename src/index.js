@@ -9,7 +9,7 @@ const app = (
     <Router>
         <React.StrictMode>
             <App />
-        </React.StrictMode>,
+        </React.StrictMode>
     </Router>
 )
 

@@ -6,6 +6,7 @@ class Orders extends Component {
     render() {
         return (
             <div>
+                <h1 style={{textAlign: "center"}}>Your Orders</h1>
                 <Order />
                 <Order />
             </div>
