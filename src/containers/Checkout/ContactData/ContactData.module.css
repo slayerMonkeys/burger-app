@@ -1,0 +1,16 @@
+.ContactData {
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.ContactData form ul {
+    list-style: none;
+}
+
+@media (min-width: 600px) {
+    .ContactData {
+        width: 500px;
+    }
+}
