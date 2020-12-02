@@ -3,14 +3,17 @@
     width: 80%;
     margin: auto;
 }
+CheckoutSummary h1 {
+    background-color: whitesmoke;
+}
 
-.CheckoutSummary div {
-    width: 100%;
-    margin: auto;
+.CheckoutSummaryButtons {
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
 @media (min-width: 600px) {
     .CheckoutSummary {
-        width: 500px;
+        width: 700px;
     }
 }
