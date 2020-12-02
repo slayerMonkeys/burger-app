@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import CheckoutSummary from "../../components/Order/CheckoutSummary/CheckoutSummary";
+import query from "../../utils/query";
 
 class Checkout extends Component {
     state = {
@@ -18,6 +19,11 @@ class Checkout extends Component {
 
     checkoutContinuedHandler = () => {
         this.props.history.replace('/checkout/contact-data')
+    }
+
+    componentDidMount() {
+        const ingredients = query.searchToObject(this.props.location.search)
+        this.setState({ingredients: ingredients})
     }
 
     render() {

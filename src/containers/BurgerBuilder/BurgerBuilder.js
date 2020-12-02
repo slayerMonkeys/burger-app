@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import query from "../../utils/query";
+import axios from '../../axios-orders';
 
 import Aux from '../../HOC/Auxi/Auxiliaire';
 import Burger from "../../components/Burger/Burger";
@@ -7,7 +9,7 @@ import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../HOC/withErrorHandler/withErrorHandler";
-import axios from '../../axios-orders';
+
 
 const INGREDIENT_PRICES = {
     salad: 0.5,
@@ -79,7 +81,10 @@ class BurgerBuilder extends Component {
         //     .catch(error => {
         //         this.setState({loading: false, purchasing: false});
         //     })
-        this.props.history.push('/checkout')
+        this.props.history.push({
+            pathname: '/checkout',
+            search: query.objectToSearch(this.state.ingredients)
+        })
     }
 
     addIngredientHandler = (type) => {
