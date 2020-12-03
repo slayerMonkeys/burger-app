@@ -10,12 +10,23 @@ const Input = (props) => {
                 className={styles.InputElement}
                 {...props.elementConfig}
                 value={props.changed} />
-            break
+            break;
         case ('textarea'):
             inputElement = <textarea
                 className={styles.InputElement}
                 {...props.elementConfig}
                 value={props.changed} />
+            break;
+        case ('select'):
+            inputElement = (
+                <select
+                className={styles.InputElement}
+                {...props.elementConfig}
+                value={props.changed}>
+                    {props.elementConfig.options.map(option => (
+                        <option key={option.value} value={option.value}>{option.displayValue}</option>
+                    ))}
+            </select>)
             break
         default:
             inputElement = <input
