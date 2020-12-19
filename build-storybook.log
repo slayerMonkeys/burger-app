@@ -1,5 +1,5 @@
 info @storybook/react v6.1.11
-info 
+info
 info => Cleaning outputDir C:\Users\admin\AppData\Local\Temp\chromatic--10208-DGRskvcuzhh8
 info => Using prebuilt manager
 info => Building preview..
@@ -11,9 +11,9 @@ info => Adding stories defined in ".storybook\main.js"
 info => Using default Webpack setup
 info => Compiling preview..
 <s> [webpack.Progress] 0% compiling
-<s> [webpack.Progress] 10% building 0/0 modules 0 active 
+<s> [webpack.Progress] 10% building 0/0 modules 0 active
 <s> [webpack.Progress] 10% building 0/1 modules 1 active multi F:\burger-app\node_modules\@storybook\core\dist\server\common\polyfills.js F:\burger-app\node_modules\@storybook\core\dist\server\preview\globals.js F:\burger-app\.storybook\storybook-init-framework-entry.js F:\burger-app\node_modules\@storybook\addon-docs\dist\frameworks\common\config.js-generated-other-entry.js F:\burger-app\node_modules\@storybook\addon-docs\dist\frameworks\react\config.js-generated-other-entry.js F:\burger-app\node_modules\@storybook\addon-links\dist\preset\addDecorator.js-generated-other-entry.js F:\burger-app\node_modules\@storybook\addon-actions\dist\preset\addDecorator.js-generated-other-entry.js F:\burger-app\node_modules\@storybook\addon-actions\dist\preset\addArgs.js-generated-other-entry.js F:\burger-app\node_modules\@storybook\addon-backgrounds\dist\preset\addDecorator.js-generated-other-entry.js F:\burger-app\node_modules\@storybook\addon-backgrounds\dist\preset\addParameter.js-generated-other-entry.js F:\burger-app\.storybook\preview.js-generated-config-entry.js F:\burger-app\.storybook\generated-stories-entry.js
-<s> [webpack.Progress] 10% building 1/1 modules 0 active 
+<s> [webpack.Progress] 10% building 1/1 modules 0 active
 <s> [webpack.Progress] 10% building 1/2 modules 1 active F:\burger-app\node_modules\babel-loader\lib\index.js??ref--4-0!F:\burger-app\.storybook\storybook-init-framework-entry.js
 <s> [webpack.Progress] 10% building 1/3 modules 2 active F:\burger-app\node_modules\babel-loader\lib\index.js??ref--4-0!F:\burger-app\.storybook\preview.js-generated-config-entry.js
 <s> [webpack.Progress] 10% building 1/4 modules 3 active F:\burger-app\node_modules\babel-loader\lib\index.js??ref--4-0!F:\burger-app\.storybook\generated-stories-entry.js
@@ -51,7 +51,7 @@ info => Compiling preview..
 <s> [webpack.Progress] 12% building 17/20 modules 3 active F:\burger-app\node_modules\@storybook\addon-docs\dist\frameworks\react\config.js
 <s> [webpack.Progress] 12% building 18/20 modules 2 active F:\burger-app\node_modules\@storybook\addon-docs\dist\frameworks\react\config.js
 <s> [webpack.Progress] 12% building 19/20 modules 1 active F:\burger-app\node_modules\@storybook\addon-docs\dist\frameworks\react\config.js
-<s> [webpack.Progress] 12% building 20/20 modules 0 active 
+<s> [webpack.Progress] 12% building 20/20 modules 0 active
 <s> [webpack.Progress] 12% building 20/21 modules 1 active F:\burger-app\src sync /^\.(?:(?:^|[\\/]|(?:(?:(?!(?:^|[\\/])\.).)*?)[\\/])(?!\.)(?=.)[^\\/]*?\.stories\.mdx)$/
 <s> [webpack.Progress] 12% building 20/22 modules 2 active F:\burger-app\src sync /^\.(?:(?:^|[\\/]|(?:(?:(?!(?:^|[\\/])\.).)*?)[\\/])(?!\.)(?=.)[^\\/]*?\.stories\.(js|jsx|ts|tsx))$/
 <s> [webpack.Progress] 12% building 20/23 modules 3 active F:\burger-app\node_modules\babel-loader\lib\index.js??ref--4-0!F:\burger-app\.storybook\preview.js
@@ -578,7 +578,7 @@ info => Compiling preview..
 <s> [webpack.Progress] 41% building 266/298 modules 32 active F:\burger-app\node_modules\@storybook\addon-docs\dist\frameworks\react\propTypes\createType.js
 <s> [webpack.Progress] 41% building 266/299 modules 33 active F:\burger-app\node_modules\@storybook\addon-actions\dist\preview\withActions.js
 <s> [webpack.Progress] 41% building 266/300 modules 34 active F:\burger-app\node_modules\@storybook\addon-actions\dist\preview\decorateAction.js
-<s> [webpack.Progress] 41% building 266/301 modules 35 active F:\burger-app\node_modules\@storybook\addon-actions\dist\preview\actions.js
+<s> [webpack.Progress] 41% building 266/301 modules 35 active F:\burger-app\node_modules\@storybook\addon-actions\dist\preview\actionTypes.js
 <s> [webpack.Progress] 41% building 266/302 modules 36 active F:\burger-app\node_modules\@storybook\addon-backgrounds\dist\constants.js
 <s> [webpack.Progress] 41% building 266/303 modules 37 active F:\burger-app\node_modules\@storybook\addon-actions\dist\models\HandlerFunction.js
 <s> [webpack.Progress] 41% building 266/304 modules 38 active F:\burger-app\node_modules\@storybook\addon-actions\dist\models\DecoratorFunction.js
@@ -2747,7 +2747,7 @@ info => Compiling preview..
 <s> [webpack.Progress] 69% building 1365/1368 modules 3 active F:\burger-app\node_modules\@popperjs\core\lib\modifiers\index.js
 <s> [webpack.Progress] 69% building 1366/1368 modules 2 active F:\burger-app\node_modules\@popperjs\core\lib\modifiers\index.js
 <s> [webpack.Progress] 69% building 1367/1368 modules 1 active F:\burger-app\node_modules\@popperjs\core\lib\modifiers\index.js
-<s> [webpack.Progress] 70% building 1368/1368 modules 0 active 
+<s> [webpack.Progress] 70% building 1368/1368 modules 0 active
 <s> [webpack.Progress] 69% building 1368/1369 modules 1 active F:\burger-app\node_modules\@popperjs\core\lib\modifiers\eventListeners.js
 <s> [webpack.Progress] 69% building 1368/1370 modules 2 active F:\burger-app\node_modules\@popperjs\core\lib\modifiers\popperOffsets.js
 <s> [webpack.Progress] 69% building 1368/1371 modules 3 active F:\burger-app\node_modules\@popperjs\core\lib\modifiers\computeStyles.js
@@ -2865,7 +2865,7 @@ info => Compiling preview..
 <s> [webpack.Progress] 69% building 1424/1427 modules 3 active F:\burger-app\node_modules\core-js\internals\is-integer.js
 <s> [webpack.Progress] 69% building 1425/1427 modules 2 active F:\burger-app\node_modules\core-js\internals\is-integer.js
 <s> [webpack.Progress] 69% building 1426/1427 modules 1 active F:\burger-app\node_modules\core-js\internals\is-integer.js
-<s> [webpack.Progress] 70% building 1427/1427 modules 0 active 
+<s> [webpack.Progress] 70% building 1427/1427 modules 0 active
 <s> [webpack.Progress] 69% building 1427/1428 modules 1 active F:\burger-app\node_modules\ansi-to-html\node_modules\entities\index.js
 <s> [webpack.Progress] 69% building 1427/1429 modules 2 active F:\burger-app\node_modules\@storybook\channel-postmessage\node_modules\qs\lib\parse.js
 <s> [webpack.Progress] 69% building 1427/1430 modules 3 active F:\burger-app\node_modules\@storybook\channel-postmessage\node_modules\qs\lib\stringify.js
@@ -2873,11 +2873,11 @@ info => Compiling preview..
 <s> [webpack.Progress] 69% building 1428/1431 modules 3 active F:\burger-app\node_modules\@storybook\channel-postmessage\node_modules\qs\lib\formats.js
 <s> [webpack.Progress] 69% building 1429/1431 modules 2 active F:\burger-app\node_modules\@storybook\channel-postmessage\node_modules\qs\lib\formats.js
 <s> [webpack.Progress] 69% building 1430/1431 modules 1 active F:\burger-app\node_modules\@storybook\channel-postmessage\node_modules\qs\lib\formats.js
-<s> [webpack.Progress] 70% building 1431/1431 modules 0 active 
+<s> [webpack.Progress] 70% building 1431/1431 modules 0 active
 <s> [webpack.Progress] 69% building 1431/1432 modules 1 active F:\burger-app\node_modules\ansi-to-html\node_modules\entities\lib\encode.js
 <s> [webpack.Progress] 69% building 1431/1433 modules 2 active F:\burger-app\node_modules\ansi-to-html\node_modules\entities\lib\decode.js
 <s> [webpack.Progress] 69% building 1432/1433 modules 1 active F:\burger-app\node_modules\ansi-to-html\node_modules\entities\lib\decode.js
-<s> [webpack.Progress] 70% building 1433/1433 modules 0 active 
+<s> [webpack.Progress] 70% building 1433/1433 modules 0 active
 <s> [webpack.Progress] 69% building 1433/1434 modules 1 active F:\burger-app\node_modules\@storybook\channel-postmessage\node_modules\qs\lib\utils.js
 <s> [webpack.Progress] 69% building 1433/1435 modules 2 active F:\burger-app\node_modules\ansi-to-html\node_modules\entities\lib\decode_codepoint.js
 <s> [webpack.Progress] 69% building 1433/1436 modules 3 active F:\burger-app\node_modules\is-function\index.js
@@ -2893,8 +2893,8 @@ info => Compiling preview..
 <s> [webpack.Progress] 69% building 1439/1440 modules 1 active F:\burger-app\node_modules\telejson\node_modules\isobject\index.js
 <s> [webpack.Progress] 69% building 1439/1441 modules 2 active F:\burger-app\node_modules\ansi-to-html\node_modules\entities\maps\decode.json
 <s> [webpack.Progress] 69% building 1440/1441 modules 1 active F:\burger-app\node_modules\ansi-to-html\node_modules\entities\maps\decode.json
-<s> [webpack.Progress] 70% building 1441/1441 modules 0 active 
-<s> [webpack.Progress] 70% building 1441/1441 modules 0 active 
+<s> [webpack.Progress] 70% building 1441/1441 modules 0 active
+<s> [webpack.Progress] 70% building 1441/1441 modules 0 active
 <s> [webpack.Progress] 70% finish module graph
 <s> [webpack.Progress] 70% finish module graph FlagDependencyExportsPlugin
 <s> [webpack.Progress] 70% finish module graph WasmFinalizeExportsPlugin
@@ -2983,12 +2983,12 @@ info => Compiling preview..
 <s> [webpack.Progress] 95% emitting HtmlWebpackPlugin
 <s> [webpack.Progress] 98% after emitting
 <s> [webpack.Progress] 98% after emitting SizeLimitsPlugin
-<s> [webpack.Progress] 100% 
+<s> [webpack.Progress] 100%
 
 info => Preview built (13 s)
 WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 WARN This can impact web performance.
-WARN Assets: 
+WARN Assets:
 WARN   vendors~main.62200029521f1d42fae8.bundle.js (2.44 MiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
@@ -2996,8 +2996,8 @@ WARN   main (2.48 MiB)
 WARN       runtime~main.62200029521f1d42fae8.bundle.js
 WARN       vendors~main.62200029521f1d42fae8.bundle.js
 WARN       main.62200029521f1d42fae8.bundle.js
-WARN 
-WARN webpack performance recommendations: 
+WARN
+WARN webpack performance recommendations:
 WARN You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
 WARN For more info visit https://webpack.js.org/guides/code-splitting/
 info => Output directory: C:\Users\admin\AppData\Local\Temp\chromatic--10208-DGRskvcuzhh8
