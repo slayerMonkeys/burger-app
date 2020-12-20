@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
-import query from "../../utils/query";
 import axios from '../../axios-orders';
 import Aux from '../../HOC/Auxi/Auxiliaire';
 import Burger from "../../components/Burger/Burger";
@@ -19,16 +18,6 @@ class BurgerBuilder extends Component {
         purchasing: false,
         loading: false,
         error: false
-    }
-
-    componentDidMount() {
-        axios.get('/ingredients.json')
-            .then(response => {
-                this.setState({ingredients: response.data});
-            })
-            .catch(error => {
-                this.setState({error: true})
-            })
     }
 
     updatePurchaseState(ingredients) {
