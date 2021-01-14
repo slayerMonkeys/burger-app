@@ -8,6 +8,7 @@ import Spinner from "../../../components/UI/Spinner/Spinner";
 import Input from "../../../components/UI/Input/Input";
 import withErrorHandler from "../../../HOC/withErrorHandler/withErrorHandler";
 import * as actionsOrder from "../../../store/actions/index";
+import { checkValidity, updateObject } from "../../../shared/utility";
 
 class ContactData extends Component {
   state = {
@@ -117,59 +118,28 @@ class ContactData extends Component {
     this.props.onOrderBurger(order, this.props.token);
   };
 
-  checkValidity(value, rules) {
-    let isValid = true;
-    let errorMessage = null;
-
-    if (rules.required) {
-      isValid = value.trim() !== "" && isValid;
-      if (!isValid) errorMessage = "This input is required";
-    }
-    if (rules.minLength) {
-      isValid = value.length >= rules.minLength && isValid;
-      if (errorMessage === null && !isValid)
-        errorMessage =
-          "minimum " + rules.minLength + " characters are required";
-    }
-    if (rules.maxLength) {
-      isValid = value.length <= rules.maxLength && isValid;
-      if (errorMessage === null && !isValid)
-        errorMessage =
-          "you need a maximum of " + rules.maxLength + " characters";
-    }
-
-    if (rules.isEmail) {
-      const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-      isValid = pattern.test(value) && isValid;
-      if (errorMessage === null && !isValid)
-        errorMessage = "Email is not valid";
-    }
-
-    if (rules.isNumeric) {
-      const pattern = /^\d+$/;
-      isValid = pattern.test(value) && isValid;
-      if (errorMessage === null && !isValid) errorMessage = "is not a number";
-    }
-    return {
-      isValid: isValid,
-      errorMessage: errorMessage,
-    };
-  }
-
   inputChangedHandler = (event, inputIdentifier) => {
-    const updatedOrderForm = { ...this.state.orderForm };
-    const updatedFormElement = { ...updatedOrderForm[inputIdentifier] };
-    updatedFormElement.value = event.target.value;
-    if (updatedFormElement.validation) {
-      const { isValid, errorMessage } = this.checkValidity(
-        updatedFormElement.value,
-        updatedFormElement.validation
+    let dataValidity;
+    if (this.state.orderForm[inputIdentifier].validation) {
+      dataValidity = checkValidity(
+        event.target.value,
+        this.state.orderForm[inputIdentifier].validation
       );
-      updatedFormElement.valid = isValid;
-      updatedFormElement.errorMessage = errorMessage;
     }
-    updatedFormElement.touched = true;
-    updatedOrderForm[inputIdentifier] = updatedFormElement;
+    const updatedFormElement = updateObject(
+      this.state.orderForm[inputIdentifier],
+      {
+        value: event.target.value,
+        touched: true,
+        valid: this.state.orderForm[inputIdentifier].validation
+          ? dataValidity.isValid
+          : true,
+        errorMessage: dataValidity.errorMessage,
+      }
+    );
+    const updatedOrderForm = updateObject(this.state.orderForm, {
+      [inputIdentifier]: updatedFormElement,
+    });
     let formIsValid = true;
     for (let inputIdentifier in updatedOrderForm) {
       formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
