@@ -53,7 +53,6 @@ export const auth = (email, password, isSignup) => {
     axios
       .post(url + "AIzaSyAKJ49LpB-7dcP5CF3EMFAGjXtE2a7Z764", authData)
       .then((response) => {
-        console.log(response);
         dispatch(authSuccess(response.data.idToken, response.data.localId));
         dispatch(checkAuthTimeout(response.data.expiresIn));
         const expirationDate = new Date(
